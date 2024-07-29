@@ -1,3 +1,5 @@
+import { Buffer } from 'node:buffer';
+
 var BinaryReader = require('../lib/binaryreader');
 
 var assert = require('assert');

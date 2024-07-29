@@ -1,3 +1,5 @@
+import { Buffer } from 'node:buffer';
+
 var Geometry = require('../lib/geometry');
 var Point = require('../lib/point');
 

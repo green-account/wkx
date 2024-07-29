@@ -1,4 +1,5 @@
 /* jshint evil: true, unused: false */
+import { Buffer } from 'node:buffer';
 
 var eql = require('deep-eql');
 
