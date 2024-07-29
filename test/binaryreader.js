@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 import * as BinaryReader from '../lib/binaryreader';
 
 import * as assert from 'assert';

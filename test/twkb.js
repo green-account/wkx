@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 import * as Geometry from '../lib/geometry';
 import * as Point from '../lib/point';
 

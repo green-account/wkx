@@ -1,7 +1,8 @@
 /* jshint evil: true, unused: false */
 
-var eql = require('deep-eql');
+import { eql } from 'deep-eql';
 
+import { Buffer } from 'node:buffer';
 import * as Geometry from '../lib/geometry';
 import * as Point from '../lib/point';
 import * as LineString from '../lib/linestring';
