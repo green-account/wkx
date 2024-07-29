@@ -17,7 +17,7 @@ Examples
 The following examples show you how to work with wkx.
 
 ```javascript
-var wkx = require('wkx');
+import * as wkx from 'wkx';
 
 //Parsing a WKT string
 var geometry = wkx.Geometry.parse('POINT(1 2)');
@@ -72,7 +72,7 @@ your code.
 
 Regardless of which of the preceeding options you choose, using `wkx` in the browser will look the same:
 ```javascript
-var wkx = require('wkx');
+import * as wkx from 'wkx';
 
 var geometry = wkx.Geometry.parse('POINT(1 2)');
 
@@ -81,8 +81,8 @@ console.log(geometry.toGeoJSON());
 
 In addition to the `wkx` module, the browser versions also export `buffer`, which is useful for parsing WKB:
 ```javascript
-var Buffer = require('buffer').Buffer;
-var wkx = require('wkx');
+import { Buffer } from 'buffer';
+import * as wkx from 'wkx';
 
 var wkbBuffer = new Buffer('0101000000000000000000f03f0000000000000040', 'hex');
 var geometry = wkx.Geometry.parse(wkbBuffer);

@@ -2,14 +2,14 @@
 
 var eql = require('deep-eql');
 
-var Geometry = require('../lib/geometry');
-var Point = require('../lib/point');
-var LineString = require('../lib/linestring');
-var Polygon = require('../lib/polygon');
-var MultiPoint = require('../lib/multipoint');
-var MultiLineString = require('../lib/multilinestring');
-var MultiPolygon = require('../lib/multipolygon');
-var GeometryCollection = require('../lib/geometrycollection');
+import * as Geometry from '../lib/geometry';
+import * as Point from '../lib/point';
+import * as LineString from '../lib/linestring';
+import * as Polygon from '../lib/polygon';
+import * as MultiPoint from '../lib/multipoint';
+import * as MultiLineString from '../lib/multilinestring';
+import * as MultiPolygon from '../lib/multipolygon';
+import * as GeometryCollection from '../lib/geometrycollection';
 
 var tests = {
     '2D': require('./testdata.json'),
@@ -18,9 +18,9 @@ var tests = {
     'ZM': require('./testdataZM.json')
 };
 
-var issueTests = require('./issuetestdata.json');
+import * as issueTests from './issuetestdata.json';
 
-var assert = require('assert');
+import * as assert from 'assert';
 
 function assertParseWkt(data) {
     assert(eql(Geometry.parse(data.wkt), eval(data.geometry)));

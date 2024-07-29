@@ -1,6 +1,6 @@
-var fs = require('fs');
-var pg = require('pg');
-var async = require('async');
+import * as fs from 'fs';
+import * as pg from 'pg';
+import * as async from 'async';
 var stringify = require('json-stringify-pretty-compact');
 
 updateTestData('./test/testdata.json');

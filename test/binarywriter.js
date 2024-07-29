@@ -1,6 +1,6 @@
-var BinaryWriter = require('../lib/binarywriter');
+import * as BinaryWriter from '../lib/binarywriter';
 
-var assert = require('assert');
+import * as assert from 'assert';
 
 describe('wkx', function () {
     describe('BinaryWriter', function () {

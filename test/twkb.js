@@ -1,7 +1,7 @@
-var Geometry = require('../lib/geometry');
-var Point = require('../lib/point');
+import * as Geometry from '../lib/geometry';
+import * as Point from '../lib/point';
 
-var assert = require('assert');
+import * as assert from 'assert';
 
 describe('wkx', function () {
     describe('parseTwkb', function () {
